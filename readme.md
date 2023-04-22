@@ -1,13 +1,13 @@
-# CRUD Api in Django
+# CRUD AṔI IN DJANGO
 Used as BackEnd for nextJs13-firsapp 
 
-## Requirements
+## REQUIREMENTS
 - python v.3.10
 - pip v.22.2.1
 - pipenv v.2022.7.24
 - Django v.4.2 will be used (support Abril 2026)
 
-## Installation
+## INSTALLATION
 
 ### Django
 ```
@@ -46,6 +46,7 @@ wheel               0.38.4
 ```
 
 ### Directory tasks_api
+```
 tasks_api/
     db.sqlite3
     manage.py
@@ -119,7 +120,7 @@ git push ... origin main
 ```
 
 
-## Develop
+## DEVELOP
 
 ### Create brunch develop
 ...
