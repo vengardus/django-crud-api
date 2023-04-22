@@ -1,4 +1,4 @@
-# CRUD AṔI IN DJANGO
+# CRUD Api in Django 
 Used as BackEnd for nextJs13-firsapp 
 
 ## REQUIREMENTS
