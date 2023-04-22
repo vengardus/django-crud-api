@@ -122,5 +122,6 @@ git push ... origin main
 
 ## DEVELOP
 
-### Create brunch develop
-...
+### Optional: Create branch develop
+git checkout -b develop
+
