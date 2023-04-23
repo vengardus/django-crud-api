@@ -48,6 +48,7 @@ PROJECT_APPS = [
 THIRD_PARTY_APPS = [
     'corsheaders',
     'rest_framework',
+    'coreapi',
 ]
 
 # Join variables
@@ -139,7 +140,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Additional settings
+
 # Cors authorization
 CORS_ALLOWED_ORIGINS = [
     
 ] 
+
+# Legacy coreapi schemas
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}

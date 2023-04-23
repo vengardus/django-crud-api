@@ -207,7 +207,7 @@ class TaskView(viewsets.ModelViewSet):
     queryset = Task.objects.all()
 ```
 
-2.1 Note:
+* Note:
 The ModelViewSet class automatically implements HTTP methods GET, POST, PUT, PATCH, and DELETE for model-based views. Additionally, it provides a set of default actions that can be customized or extended as needed.
 
 3. Create routes for app tasks
@@ -242,3 +242,36 @@ urlpatterns = [
 - POST : localhost:8000/tasks/api/v1/tasks/
 - PUT : localhost:8000/tasks/api/v1/tasks/<id>/
 - DELETE: localhost:8000/tasks/api/v1/tasks/<id>/
+
+### Document API using the coreapi package
+1. Install
+```
+pipenv install coreapi
+```
+2. Settings (core/settings.py)
+```
+THIRD_PARTY_APPS = [
+    ...
+    'coreapi',
+]
+```
+and at the end of the file add...
+```
+....
+# Legacy coreapi schemas
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}
+```
+* More info: https://www.django-rest-framework.org/coreapi/
+
+3. Add route (tasks/urls.py)
+```
+urlpatterns = [
+    ...
+    path('docs/', include_docs_urls(title='Tasks API')),
+]
+```
+4. Test Document Api
+* localhost:8000/tasks/docs
+
