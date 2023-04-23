@@ -41,7 +41,7 @@ DJANGO_APPS = [
 
 # Add PROJECT_APPS 
 PROJECT_APPS = [
-    
+    'tasks'    
 ]
 
 # Add THIRD_PARTY_APPS
@@ -139,6 +139,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Additional settings
-CORS_ALLOWED_ORIGINS = [ 
-
-]
+# Cors authorization
+CORS_ALLOWED_ORIGINS = [
+    
+] 
