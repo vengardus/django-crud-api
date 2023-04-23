@@ -1,6 +1,6 @@
 # CRUD Api in Django 
 * Simple App used as BackEnd for nextJs13-firsapp 
-* Django Rest Framework will be used.
+* Django Rest Framework package will be used.
 
 ## REQUIREMENTS
 - python v.3.10
@@ -236,7 +236,7 @@ urlpatterns = [
 
 5. Test api 
 - url base: localhost:8000/tasks/api/v1/tasks
-- test from navigator or with Thunder Client extension in VSCode
+- using a browser or with the Thunder Client extension for VSCode
 - GET: localhost:8000/tasks/api/v1/tasks
 - GET <id>: localhost:8000/tasks/api/v1/tasks/3
 - POST : localhost:8000/tasks/api/v1/tasks/
